@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
-}
+/* font icons */
+@import url("./assets/css/icons.css");
+/* Theme swiper Css */
+@import url("./assets/css/swiper-bundle.min.css");
+/* Theme Css Hamburger */
+@import url("./assets/css/hamburger.css");
+/* Theme Css Common */
+@import url("./assets/css/common.css");
+/* Theme Css navbar */
+@import url("./assets/css/navbar.css");
+/* Theme Css hero */
+@import url("./assets/css/hero.css");
+/* Theme Css offcanvas-bag */
+@import url("./assets/css/offcanvas-bag.css");
+/* Theme Css shop-popular */
+@import url("./assets/css/shop-popular.css");
+/* Theme Css categories */
+@import url("./assets/css/categories.css");
+/* Theme Css flash-sell */
+@import url("./assets/css/flash-sell.css");
+/* Theme Css mega-sell */
+@import url("./assets/css/mega-sell.css");
+/* Theme Css exclusive-option */
+@import url("./assets/css/exclusive-option.css");
+/* Theme Css comming-soon */
+@import url("./assets/css/comming-soon.css");
+/* Theme Css footer */
+@import url("./assets/css/footer.css");
+/* Theme Css single-product */
+@import url("./assets/css/single-product.css");
+/* Theme Css customer-review */
+@import url("./assets/css/customer-review.css");
+/* Theme Css all-products */
+@import url("./assets/css/all-products.css");
+/* Theme Css single-product-slider-modal */
+@import url("./assets/css/single-product-slider-modal.css");
+/* Theme Css view-cart */
+@import url("./assets/css/view-cart.css");
+/* Theme Css checkout */
+@import url("./assets/css/checkout.css");
+/* Theme Css terms-condition */
+@import url("./assets/css/terms-condition.css");
+/* Theme Css 4O4 */
+@import url("./assets/css/4O4.css");
+/* Theme Css about */
+@import url("./assets/css/about.css");
+/* Theme Css about */
+@import url("./assets/css/profile.css");
+/* Theme Css signup */
+@import url("./assets/css/signup.css");
+/* Theme Css media-query */
+@import url("./assets/css/media-query.css");
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* ----------------------- */
