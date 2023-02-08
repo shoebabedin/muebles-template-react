@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Products = ({ classProps, data }) => {
@@ -12,7 +12,7 @@ const Products = ({ classProps, data }) => {
       <div key={id} className="col-lg-3 col-md-6">
         <div className="image">
           <span className="heartClick" onClick={() => setHeeart(!heart)}>
-            <i className={`ph-heart ${heart && "ph-heart-fill"}`}></i>
+            <i className={`ph-heart ${heart ? "ph-heart-fill" : ""}`}></i>
           </span>
           <img
             className="img-fluid"

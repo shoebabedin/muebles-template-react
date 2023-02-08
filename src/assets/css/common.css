@@ -454,7 +454,7 @@ body {
 }
 #btn-back-to-top.visible {
   position: fixed;
-  bottom: 20px;
+  bottom: 7%;
   right: 20px;
   background-color: var(--Primary);
   visibility: visible !important;
@@ -472,10 +472,13 @@ body {
 @-webkit-keyframes wobble-hor-top {
   0%,
   100% {
-    -webkit-transform: translateX(0%);
     transform: translateX(0%);
-    -webkit-transform-origin: 50% 50%;
+    -webkit-transform: translateX(0%);
     transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
   }
   15% {
     transform: rotate(10deg);
