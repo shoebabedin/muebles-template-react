@@ -15,7 +15,7 @@ const HomeHero = () => {
               />
               <div className="overlay">
                 <h2>Living & Bed Room</h2>
-                <Link to="./pages/shop-all-product.html" className="shop_collection">
+                <Link to="shop-all-product" className="shop_collection">
                   Shop Collection
                 </Link>
               </div>

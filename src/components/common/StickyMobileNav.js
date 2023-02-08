@@ -1,8 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const StickyMobileNav = (props) => {
-  
+  const location = useLocation();
+  const str = location.pathname;
+  console.log(str);
 
   return (
     <>
@@ -12,13 +14,13 @@ const StickyMobileNav = (props) => {
             <div className="col-lg-12">
               <ul className="mobile_sticky_nav">
                 <li className="">
-                  <Link className="active" to="/">
+                  <Link className={str === '/' && 'active'} to="/">
                     <i className="ph-house"></i>
                     Home
                   </Link>
                 </li>
                 <li>
-                  <Link to="/">
+                  <Link to="/wishlist" className={str === '/wishlist' && 'active'}>
                     <i className="ph-heart"></i>
                     Wishlist
                   </Link>
@@ -32,8 +34,8 @@ const StickyMobileNav = (props) => {
                     Cart
                   </Link>
                 </li>
-                <li className="">
-                  <Link to="/">
+                <li >
+                  <Link to="/profile" className={str === '/profile' && 'active'}>
                     <i className="ph-user"></i>
                     Account
                   </Link>
