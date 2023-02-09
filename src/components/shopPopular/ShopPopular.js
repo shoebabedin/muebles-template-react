@@ -3,22 +3,7 @@ import { Link } from "react-router-dom";
 import Products from "../common/Products";
 
 const ShopPopular = ({ classProps, data }) => {
-  // const [data, setData] = useState(null);
- 
 
-  // useEffect(() => {
-  //  const fetchData = async () => {
-  //   const response = await fetch(`./../assets/Data/AllProduct.json`);
-  //   const newData = await response.json();
-  //   setData(newData);
-  //   console.log(newData);
-  // };
-
-  // fetchData();
-
-  // }, [])
-
-  // console.log(data);
   return (
     <>
       <section className={`${classProps} shop_popular`}>

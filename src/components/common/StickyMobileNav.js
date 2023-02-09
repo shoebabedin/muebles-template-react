@@ -4,7 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 const StickyMobileNav = (props) => {
   const location = useLocation();
   const str = location.pathname;
-  console.log(str);
+  
 
   return (
     <>

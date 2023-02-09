@@ -29,7 +29,7 @@ const VerifyEmail = () => {
     function onSubmit(e) {
       e.preventDefault();
       const code = inputElements.map(({ value }) => value).join("");
-      console.log(code);
+     
     }
   }, []);
 
@@ -38,7 +38,7 @@ const VerifyEmail = () => {
       <div className="container-fluid">
         <div className="row">
           <div className="col-12">
-            <div className="modal-header border-0">
+            <div className="modal-header border-0 mt-3">
               <Link className="navbar-brand mx-auto" to="/">
                 <img
                   className="img-fluid"

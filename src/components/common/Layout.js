@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Outlet } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Outlet, useLocation } from "react-router-dom";
 import CartCanvas from "./CartCanvas";
 import Footer from "./Footer";
 import Header from "./Header";
@@ -9,6 +9,15 @@ import ToTopBtn from "./ToTopBtn";
 
 const Layout = (props) => {
   const [show, setShow] = useState(false);
+  const location = useLocation();
+  const reload = location.pathname;
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }, [reload]);
 
   const handleShow = () => {
     setShow(true);

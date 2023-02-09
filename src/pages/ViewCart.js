@@ -7,8 +7,17 @@ const ViewCart = () => {
   };
 
   const CardItem = () => {
-    const [value, setValue] = useState(0);
-
+    const [value, setValue] = useState(1);
+    const incBtn = () => {
+      if (value > 0) {
+        setValue(value + 1);
+      }
+    };
+    const decBtn = () => {
+      if (value > 1) {
+        setValue(value - 1);
+      }
+    };
     return (
       <div className="cart_added_item">
         <div className="img">
@@ -32,7 +41,7 @@ const ViewCart = () => {
             <div className="input-group">
               <button
                 className="quantity-left-minus"
-                onClick={() => setValue(value - 1)}
+                onClick={decBtn}
               >
                 <i className="ph-minus"></i>
               </button>
@@ -45,7 +54,7 @@ const ViewCart = () => {
               />
               <button
                 className="quantity-right-plus"
-                onClick={() => setValue(value + 1)}
+                onClick={incBtn}
               >
                 <i className="ph-plus"></i>
               </button>
@@ -146,7 +155,7 @@ const ViewCart = () => {
                   </div>
                 </div> */}
                 <div className="cart-item-add-more">
-                  <Link to="/shop-all-product">
+                  <Link to="/shop-all-product" className="add-new-method">
                     <span>
                       <svg
                         width="20"

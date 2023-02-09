@@ -1,13 +1,18 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+
 
 const Login = () => {
+  const [view, setView] = useState(false);
+  const navigate = useNavigate()
+
+
   return (
     <div className="signup">
       <div className="container-fluid">
         <div className="row">
           <div className="col-12">
-            <div className="modal-header border-0">
+            <div className="modal-header border-0  mt-3">
               <Link className="navbar-brand mx-auto" to="/">
                 <img src={require("./../assets/images/logo/logo.png")} alt="" />
               </Link>
@@ -69,13 +74,13 @@ const Login = () => {
                     </label>
                     <div className="position-relative">
                       <input
-                        type="password"
+                        type={view ? "text" : "password"}
                         className="form-control"
                         id="password"
                         placeholder="Password"
                         required
                       />
-                      <span className="toggle_pass" onClick="myFunction()">
+                      <span className="toggle_pass" onClick={() => setView(!view)}>
                         <svg
                           width="24"
                           height="24"
@@ -128,16 +133,16 @@ const Login = () => {
                     <input type="checkbox" id="terms" />
                     <label for="terms" className="form-label">
                       Remeber me
-                      <a href="./forgot-password.html">Forgot Password?</a>
+                      <Link to="/forgot-password">Forgot Password?</Link>
                     </label>
                   </div>
                 </div>
                 <div className="col-lg-12 text-center">
-                  <button type="submit" className="btn">
+                  <button type="submit" className="btn" onClick={() => navigate("/")}>
                     Sign In
                   </button>
                   <p className="auth_page_link">
-                    Don’t have an account? <a href="./signup.html">Sign Up</a>
+                    Don’t have an account? <Link to="/signup">Sign Up</Link>
                   </p>
                 </div>
               </div>

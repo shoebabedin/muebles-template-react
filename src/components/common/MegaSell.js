@@ -20,7 +20,7 @@ const MegaSell = () => {
                     In publishing and graphic design, Lorem ipsum is a
                     placeholder text commonly used to demonstrate
                   </p>
-                  <Link to="#"> Shop Collection </Link>
+                  <Link to="/"> Shop Collection </Link>
                 </div>
               </div>
             </div>

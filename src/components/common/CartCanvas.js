@@ -3,14 +3,71 @@ import { Offcanvas } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 const CartCanvas = ({ handleShow, show, setShow }) => {
-  const [value, setValue] = useState(0);
+  // const [value, setValue] = useState(0);
   const handleClose = () => setShow(false);
-  // const incBtn = () => {
-  //   setValue(value + 1);
-  // };
-  // const decBtn = () => {
-  //   setValue(value - 1);
-  // };
+ 
+
+  const CartItem = () => {
+    const [value, setValue] = useState(1);
+    const incBtn = () => {
+      if (value > 0) {
+        setValue(value + 1);
+      }
+    };
+    const decBtn = () => {
+      if (value > 1) {
+        setValue(value - 1);
+      }
+    };
+    return (
+      <div className="cart_added_item">
+        <div className="img">
+          <img
+            className="img-fluid"
+            src={require("./../../assets/images/cart-item/item.png")}
+            alt=""
+          />
+        </div>
+        <div className="title_price">
+          <div className="cart_title_price">
+            <h4>
+              Muebles Sofa - Blue Performance Fabric with customize texture
+            </h4>
+            <span className="price"> $1,598 </span>
+          </div>
+          <div className="product_cat">
+            <p>Taylor Flet Gray</p>
+          </div>
+          <div className="cart_inc_dec_del">
+            <div className="input-group">
+              <button
+                className="quantity-left-minus"
+                onClick={decBtn}
+              >
+                <i className="ph-minus"></i>
+              </button>
+              <input
+                className="form-control input-number"
+                data-value
+                type="text"
+                value={value}
+                disabled
+              />
+              <button
+                className="quantity-right-plus"
+                onClick={incBtn}
+              >
+                <i className="ph-plus"></i>
+              </button>
+            </div>
+            <div className="cart_del_btn">
+              <i className="ph-trash"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  };
   return (
     <>
       <Offcanvas
@@ -24,7 +81,10 @@ const CartCanvas = ({ handleShow, show, setShow }) => {
         </Offcanvas.Header>
         <Offcanvas.Body>
           <div className="cart_added">
-            <div className="cart_added_item">
+            {[...Array(2)].map((item, i) => (
+              <CartItem />
+            ))}
+            {/* <div className="cart_added_item">
               <div className="img">
                 <img
                   className="img-fluid"
@@ -110,7 +170,7 @@ const CartCanvas = ({ handleShow, show, setShow }) => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
           <div className="cart_footer">
             <div className="promocode">

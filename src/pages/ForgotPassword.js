@@ -2,15 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const ForgotPassword = () => {
-    const goBack = () => {
-        window.history.back();
-      };
   return (
     <div className="signup">
       <div className="container-fluid">
         <div className="row">
           <div className="col-12">
-            <div className="modal-header border-0">
+            <div className="modal-header border-0 mt-3">
               <Link className="navbar-brand mx-auto" to="./../index.html">
                 <img src={require("./../assets/images/logo/logo.png")} alt="" />
               </Link>
@@ -56,7 +53,7 @@ const ForgotPassword = () => {
                   <button type="submit" className="btn forgot-pass">
                     Send
                   </button>
-                  <Link to="login" className="backTOSignIn" onClick={goBack}>
+                  <Link to="/login" className="backTOSignIn">
                     back to sign in
                   </Link>
                 </div>

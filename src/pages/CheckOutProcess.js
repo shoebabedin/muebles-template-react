@@ -5,6 +5,8 @@ const CheckOutProcess = () => {
   const [process, setProcess] = useState(0);
   const [isDateActive, setIsDateActive] = useState(false);
 
+
+
   return (
     <>
       <div className="checkout_process_modal view_cart_modal">
@@ -293,10 +295,10 @@ const CheckOutProcess = () => {
                           <input
                             className="form-check-input"
                             type="radio"
+                            defaultChecked={true}
                             name="exampleRadios"
                             id="home"
                             value="option1"
-                            defaultChecked
                           />
                           <label htmlFor="home">Home</label>
                           <span className="default">Default</span>
@@ -347,7 +349,7 @@ const CheckOutProcess = () => {
                         </div>
                       </div>
                       <div className="cart-item-add-more">
-                        <Link to="/shop-all-product">
+                        <Link to="/shop-all-product" className="add-new-method">
                           <span>
                             <svg
                               width="20"

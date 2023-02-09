@@ -1,13 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Signup = () => {
+  const navigate = useNavigate()
   return (
     <div className="signup">
       <div className="container-fluid">
         <div className="row">
           <div className="col-12">
-            <div className="modal-header border-0">
+            <div className="modal-header border-0  mt-3">
               <Link className="navbar-brand mx-auto" to="/">
                 <img src={require("./../assets/images/logo/logo.png")} alt="" />
               </Link>
@@ -108,16 +109,16 @@ const Signup = () => {
                     <input type="checkbox" id="terms" />
                     <label for="terms" className="form-label">
                       I accept the
-                      <Link to="#!">Terms and Conditions</Link>
+                      <Link to="/terms-condition">Terms and Conditions</Link>
                     </label>
                   </div>
                 </div>
                 <div className="col-12 text-center">
-                  <button type="submit" className="btn">
+                  <button type="submit" className="btn" onClick={() => navigate("/login")}>
                     Sign Up
                   </button>
                   <p className="auth_page_link">
-                    Don’t have an account? <a href="./signin.html">Sign In</a>
+                    Don’t have an account? <Link to="/login">Sign In</Link>
                   </p>
                 </div>
               </div>

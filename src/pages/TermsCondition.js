@@ -8,7 +8,7 @@ const TermsCondition = () => {
   const str = document.location.toString();
   const locationSplit = str.split("/");
   const bradecumName = locationSplit[3];
-  console.log(location);
+ 
   return (
     <>
       <div className="terms_condition_hero">

@@ -96,16 +96,16 @@ const Footer = () => {
                   <Link to="terms-condition">Terms & Conditions</Link>
                 </li>
                 <li>
-                  <Link to="terms-condition">Privacy Policy</Link>
+                  <Link to="privacy-policy">Privacy Policy</Link>
                 </li>
                 <li>
-                  <Link to="terms-condition">Payment Policy</Link>
+                  <Link to="payment-policy">Payment Policy</Link>
                 </li>
                 <li>
-                  <Link to="terms-condition">Exchange & Return</Link>
+                  <Link to="exchange-return">Exchange & Return</Link>
                 </li>
                 <li>
-                  <Link to="terms-condition">Shipping Policy</Link>
+                  <Link to="shipping-policy">Shipping Policy</Link>
                 </li>
               </ul>
             </div>
