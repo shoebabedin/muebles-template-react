@@ -172,7 +172,7 @@ const BillingComponents = () => {
             </div>
           </div>
           <div className="cart-item-add-more">
-            <Link to="#">
+            <Link to="#" className="add-new-method">
               <span>
                 <svg
                   width="20"
