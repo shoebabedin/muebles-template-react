@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import CategoriesHighlights from "../components/common/CategoriesHighlights";
 import HomeHero from "../components/common/HomeHero";
 import MegaSell from "../components/common/MegaSell";
@@ -10,32 +11,33 @@ import data from "./../assets/Data/AllProduct.json";
 import flashsell from "./../assets/Data/flashSell.json";
 
 const Home = () => {
- 
-
-  
-  
   return (
     <>
+      {/* head title */}
+      <Helmet>
+        <title>Home</title>
+      </Helmet>
+      {/* head title */}
       {/* hero */}
       <HomeHero />
       {/* hero */}
       {/* shop by popular */}
-      <ShopPopular data={data.slice(0,4)}/>
+      <ShopPopular data={data.slice(0, 4)} />
       {/* shop by popular */}
       {/* Categories Highlights */}
       <CategoriesHighlights />
       {/* Categories Highlights */}
       {/* flash sell */}
-      <FlashSell  data={flashsell.slice(0,4)} />
+      <FlashSell data={flashsell.slice(0, 4)} />
       {/* flash sell */}
       {/* mega sell */}
       <MegaSell />
       {/* mega sell */}
       {/* Latest Arrivals */}
-      <LatestArrival  classProps="flash_sell"  data={data.slice(0,4)}/>
+      <LatestArrival classProps="flash_sell" data={data.slice(0, 4)} />
       {/* Latest Arrivals */}
       {/* Option part */}
-      <Option/>
+      <Option />
       {/* Option part */}
     </>
   );
