@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { useLocation } from 'react-router-dom';
 import ProfileSideNav from '../components/Accounts/ProfileSideNav';
 import ReviewsComponents from '../components/Accounts/ReviewsComponents';
@@ -11,6 +12,11 @@ const Reviews = () => {
     const bradecumName = locationSplit[3];
     return (
         <>
+           {/* head title */}
+      <Helmet>
+        <title>{bradecumName}</title>
+      </Helmet>
+      {/* head title */}
             <div className="profile checkout_process_modal view_cart_modal">
         <div className="container">
           <div className="row">

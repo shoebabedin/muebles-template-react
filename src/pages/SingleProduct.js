@@ -15,6 +15,7 @@ import "swiper/css/navigation";
 import "swiper/css/thumbs";
 import Products from "../components/common/Products";
 // json data
+import { Helmet } from "react-helmet";
 import StarRating from "../components/Accounts/StarRating";
 import data from "./../assets/Data/AllProduct.json";
 import texture from "./../assets/Data/ProductTexture.json";
@@ -34,6 +35,11 @@ const SingleProduct = () => {
   const [nav2, setNav2] = useState();
   return (
     <>
+       {/* head title */}
+       <Helmet>
+        <title>Single Product</title>
+      </Helmet>
+      {/* head title */}
       <section className="product_hero mt-3">
         <div className="container-fluid">
           <div className="row">

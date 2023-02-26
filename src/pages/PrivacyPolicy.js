@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { Link, useLocation } from 'react-router-dom';
 import TermsConditionPage from '../components/common/TermsConditionPage';
 
@@ -10,6 +11,11 @@ const PrivacyPolicy = () => {
   const bradecumName = locationSplit[3];
     return (
         <>
+           {/* head title */}
+      <Helmet>
+        <title>{bradecumName}</title>
+      </Helmet>
+      {/* head title */}
              <div className="terms_condition_hero">
         <div className="container">
           <div className="row">

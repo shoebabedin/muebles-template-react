@@ -130,7 +130,7 @@ const Footer = () => {
               </ul>
             </div>
             <div className="col-lg-2 col-md-6 col-12">
-              <h4 className="heading">Featured products</h4>
+              <h4 className="heading">Support & Contact</h4>
               <ul className="supprt_link">
                 <li>
                   <Link to="callto:09666737333">

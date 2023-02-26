@@ -1,8 +1,15 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 
 const ForgotPassword = () => {
   return (
+    <>
+   {/* head title */}
+   <Helmet>
+        <title>Forgot Password</title>
+      </Helmet>
+      {/* head title */}
     <div className="signup">
       <div className="container-fluid">
         <div className="row">
@@ -63,6 +70,7 @@ const ForgotPassword = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

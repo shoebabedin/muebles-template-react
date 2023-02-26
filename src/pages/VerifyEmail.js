@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Button } from "react-bootstrap";
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 
 const VerifyEmail = () => {
@@ -34,6 +35,12 @@ const VerifyEmail = () => {
   }, []);
 
   return (
+    <>
+   {/* head title */}
+   <Helmet>
+        <title>Verify-Email</title>
+      </Helmet>
+      {/* head title */}
     <div className="signup">
       <div className="container-fluid">
         <div className="row">
@@ -97,6 +104,7 @@ const VerifyEmail = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

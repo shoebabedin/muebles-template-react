@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { useLocation } from "react-router-dom";
 import Home from "../components/Accounts/Home";
 import ProfileSideNav from "../components/Accounts/ProfileSideNav";
@@ -13,6 +14,11 @@ const Profile = () => {
 
   return (
     <>
+       {/* head title */}
+       <Helmet>
+        <title>{bradecumName}</title>
+      </Helmet>
+      {/* head title */}
       <div className="profile">
         <div className="container">
           <div className="row">

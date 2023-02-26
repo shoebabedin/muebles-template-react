@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 
 const ViewCart = () => {
@@ -69,6 +70,12 @@ const ViewCart = () => {
   };
 
   return (
+    <>
+   {/* head title */}
+   <Helmet>
+        <title>View-Cart</title>
+      </Helmet>
+      {/* head title */}
     <div className="checkout_process_modal view_cart_modal">
       <div className="container-fluid">
         <div className="row">
@@ -222,6 +229,7 @@ const ViewCart = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

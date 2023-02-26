@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Button } from "react-bootstrap";
+import { Helmet } from "react-helmet";
 import FilterCanvas from "../components/common/FilterCanvas";
 import Products from "../components/common/Products";
 import ProductHero from "../components/ProductHero/ProductHero";
@@ -14,6 +15,9 @@ const ShopAllProduct = () => {
 
   return (
     <>
+    <Helmet>
+        <title>Shop-All-Product</title>
+      </Helmet>
       <ProductHero />
 
       {/* Latest Arrivals */}

@@ -1,9 +1,16 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { Link, useNavigate } from "react-router-dom";
 
 const Signup = () => {
   const navigate = useNavigate()
   return (
+    <>
+   {/* head title */}
+   <Helmet>
+        <title>Sign-Up</title>
+      </Helmet>
+      {/* head title */}
     <div className="signup">
       <div className="container-fluid">
         <div className="row">
@@ -127,6 +134,7 @@ const Signup = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

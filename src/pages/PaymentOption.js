@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { useLocation } from 'react-router-dom';
 import PaymentComponents from '../components/Accounts/PaymentComponents';
 import ProfileSideNav from '../components/Accounts/ProfileSideNav';
@@ -11,6 +12,11 @@ const PaymentOption = () => {
   const bradecumName = locationSplit[3];
   return (
     <>
+       {/* head title */}
+       <Helmet>
+        <title>{bradecumName}</title>
+      </Helmet>
+      {/* head title */}
       <div className="profile">
         <div className="container">
           <div className="row">

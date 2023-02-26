@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { useLocation } from "react-router-dom";
 import ProfileSideNav from "../components/Accounts/ProfileSideNav";
 import WishListComponents from "../components/Accounts/WishListComponents";
@@ -11,6 +12,9 @@ const WishList = () => {
   const bradecumName = locationSplit[3];
   return (
     <>
+      <Helmet>
+        <title>{bradecumName}</title>
+      </Helmet>
       <div className="profile checkout_process_modal view_cart_modal">
         <div className="container">
           <div className="row">

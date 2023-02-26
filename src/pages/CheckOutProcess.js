@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 
 const CheckOutProcess = () => {
@@ -9,6 +10,11 @@ const CheckOutProcess = () => {
 
   return (
     <>
+       {/* head title */}
+       <Helmet>
+        <title>Check-Out-Process</title>
+      </Helmet>
+      {/* head title */}
       <div className="checkout_process_modal view_cart_modal">
         <div className="container-fluid">
           <div className="row">

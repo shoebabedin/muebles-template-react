@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { Link, useLocation } from "react-router-dom";
 import TermsConditionPage from "../components/common/TermsConditionPage";
 
@@ -11,6 +12,9 @@ const TermsCondition = () => {
  
   return (
     <>
+    <Helmet>
+        <title>{bradecumName}</title>
+      </Helmet>
       <div className="terms_condition_hero">
         <div className="container">
           <div className="row">
