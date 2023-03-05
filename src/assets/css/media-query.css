@@ -4,6 +4,9 @@
     /* flex: 1 0 30%; */
     /* margin-bottom: 30px; */
   }
+  .option_part .provide_best_bg {
+    width: calc(100% - 0%);
+  }
   .option_part .number,
   .option_part .ttl_desc h3 {
     font-size: 18px;
@@ -24,6 +27,9 @@
 }
 
 @media (min-width: 993px) and (max-width: 1199px) {
+  .option_part .provide_best_bg {
+    width: calc(100% - 0%);
+  }
   .option_part .col {
     flex: 1 0 50%;
   }
