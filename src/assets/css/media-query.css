@@ -24,15 +24,15 @@
 }
 
 @media (min-width: 993px) and (max-width: 1199px) {
-  /* .option_part .col {
-    flex: 1 0 50%;
-  } */
-}
-@media (min-width: 992px) and (max-width: 1022px) {
   .option_part .col {
     flex: 1 0 50%;
   }
 }
+/* @media (min-width: 992px) and (max-width: 1022px) {
+  .option_part .col {
+    flex: 1 0 50%;
+  }
+} */
 @media screen and (min-width: 992px) {
   .mob_nav {
     display: none;
